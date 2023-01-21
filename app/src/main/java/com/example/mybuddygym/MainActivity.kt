@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     val startButton: Button = findViewById(R.id.button)
-    val image: Image = findViewById(R.id.imageview)
+    //val image: Image = findViewById(R.id.imageview)
 
 
 }

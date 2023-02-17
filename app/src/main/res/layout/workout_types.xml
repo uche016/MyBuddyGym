@@ -5,21 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-   <androidx.appcompat.widget.LinearLayoutCompat
+   <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toBottomOf="parent">
-<androidx.recyclerview.widget.RecyclerView
+   <androidx.recyclerview.widget.RecyclerView
+       app:layout_constraintTop_toTopOf="parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    tools:itemCount="3"
    tools:listitem="@layout/card_view_types"
-   tools:itemCount="3"/>
+    android:paddingTop="20dp"
+   />
 
 
-   </androidx.appcompat.widget.LinearLayoutCompat>
+   </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

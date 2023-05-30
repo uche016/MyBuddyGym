@@ -10,7 +10,6 @@ object DatabaseConstants  {
 
             const val FIRST_NAME = "first_name"
             const val LAST_NAME = "last_name"
-            const val HUB = "hub"
             const val TEMPLATE = "template"
             const val PASSWORD = "password"
             const val ACCESS_LEVEL = "access_level"
@@ -29,13 +28,15 @@ object DatabaseConstants  {
         }
     }
 
+
+
     object WorkOutDetailsTable {
         const val TABLE_NAME = "work_out_details"
 
         object ColumnNames {
             const val APP_USER_ID = "app_user_id"
 
-            const val ROAD_USER_NAME = "app_user_name"
+            const val APP_USER_NAME = "app_user_name"
             const val SEX = "sex"
             const val DATE_OF_BIRTH = "date_of_birth"
             const val HOME_ADDRESS = "home_address"

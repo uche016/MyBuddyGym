@@ -1,4 +1,4 @@
-package com.example.mybuddygym.database.model
+package com.example.mybuddygym.database
 
 import android.content.Context
 import androidx.annotation.NonNull
@@ -29,7 +29,7 @@ abstract class DatabaseMyBuddyApp : RoomDatabase(){
     companion object {
         @Volatile
         private var sInstance: DatabaseMyBuddyApp? = null
-        private const val DATABASE_NAME = "AssetManager.db"
+        private const val DATABASE_NAME = "MyBuddyApp.db"
 
         // singleton pattern
         fun getInstance(context: Context): DatabaseMyBuddyApp {

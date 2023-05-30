@@ -17,15 +17,12 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/title_tv"
-
+            style="@style/MyBuddyAppSecondaryButtonFO"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:lineSpacingExtra="5dp"
-            android:text="Gym Categories"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold"
+            android:text="@string/gym_categories"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

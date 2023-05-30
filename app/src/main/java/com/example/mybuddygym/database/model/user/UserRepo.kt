@@ -1,4 +1,12 @@
 package com.example.mybuddygym.database.model.user
 
-class UserRepo {
+
+
+interface UserRepo {
+    fun insert(user: User)
+
+    fun insert(users: List<User>)
+
+    fun clearAllStaff()
+
 }

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="header_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#252244</item>
+    </style>
+
+    <style name="header_description">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#252244</item>
+    </style>
+
+    <style name="item_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#252244</item>
+    </style>
+
+    <style name="item_details">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#252244</item>
+    </style>
+
+    <!-- Asset Manager Styles -->
+    <style name="background_default" parent="Widget.MaterialComponents.Button">
+
+    </style>
+
+    <style name="essential_text_color" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="MyBuddyAppPrimaryText_HeadingTextFO" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/BG_blue_darker</item>
+        <item name="fontWeight">700</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppSecondaryTextFO" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/BG_blue_darker</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/blogger_sans</item>
+    </style>
+
+
+    <!--MyBuddyApp BUTTONS-->
+    <style name="MyBuddyAppPrimaryButtonFO" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/BG_blue_darker</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppSecondaryButtonFO" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/BG_blue_darker</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppDisabledButtonFO" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/disable_btn_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppAltButtonFO" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/BG_red2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:strokeWidth">1</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppSecondaryAltButtonFO" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/BG_red2</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+
+    <style name="MyBuddyAppSuccessTextFO" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/BG_blue_dark</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="CheckedButtonStyleColor" parent="Theme.MaterialComponents.Light">
+        <item name="colorAccent">#75748F</item>
+    </style>
+
+    <style name="MyBuddyAppPrimaryText_HeadingText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppSecondaryText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/blogger_sans</item>
+    </style>
+
+    <style name="MyBuddyAppPrimaryText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">700</item>
+        <item name="fontFamily">@font/blogger_sans</item>
+    </style>
+
+    <style name="MyBuddyAppPrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/feather_bold</item>
+        <item name="android:height">@dimen/height_primary_button</item>
+    </style>
+
+    <style name="MyBuddyAppSecondaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+
+    <style name="MyBuddyAppSecondaryTextNew" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/blogger_sans</item>
+    </style>
+
+
+    <style name="MyBuddyAppSecondaryText_HeadingText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/feather_bold</item>
+    </style>
+
+    <style name="MyBuddyAppPlaceholderText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontWeight">500</item>
+        <item name="fontFamily">@font/blogger_sans</item>
+        <item name="android:gravity">top</item>
+    </style>
+</resources>

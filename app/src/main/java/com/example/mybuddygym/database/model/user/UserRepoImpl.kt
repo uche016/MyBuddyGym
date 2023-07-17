@@ -21,6 +21,10 @@ class UserRepoImpl @Inject constructor(
         userDao.clearAllStaff()
     }
 
+    override fun getUserByFirstName(firstName: String): User {
+      return userDao.getUserByFirstName(firstName)
+    }
+
 }
 
 

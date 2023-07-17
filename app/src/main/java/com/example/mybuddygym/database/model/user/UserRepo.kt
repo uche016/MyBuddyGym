@@ -9,4 +9,5 @@ interface UserRepo {
 
     fun clearAllStaff()
 
+    fun getUserByFirstName(firstName:String):User
 }

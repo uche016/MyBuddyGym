@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.mybuddygym.database.DatabaseConstants
 
 
 @Dao
@@ -17,4 +18,8 @@ interface UserDao {
     @Query("DELETE FROM User")
     fun clearAllStaff()
 
+
+    @Query("SELECT * FROM ${DatabaseConstants.UserTable.TABLE_NAME}" +
+            " WHERE ${DatabaseConstants.UserTable.ColumnNames.FIRST_NAME} =:firstName")
+    fun getUserByFirstName(firstName:String):User
 }

@@ -5,10 +5,10 @@
         path="." />
     <external-files-path
         name="my_images"
-        path="Android/data/com.babbangona.frscapp/files/Pictures" />
+        path="Android/data/com.example.mybuddygym/files/Pictures" />
     <external-files-path
         name="my_videos"
-        path="Android/data/com.babbangona.frscapp/files/Videos" />
+        path="Android/data/com.example.mybuddygym/files/Videos" />
     <files-path
         name="member_images"
         path="Pictures/Members" />

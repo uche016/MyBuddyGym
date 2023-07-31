@@ -41,7 +41,6 @@ object DatabaseConstants  {
             const val DATE_OF_BIRTH = "date_of_birth"
             const val HOME_ADDRESS = "home_address"
             const val HEIGHT = "height"
-            const val BLOOD_GROUP = "blood_group"
             const val NEXT_OF_KIN = "next_of_kin"
             const val PHONE_NUMBER = "phone_number"
             const val APP_VERSION  = "app_version"

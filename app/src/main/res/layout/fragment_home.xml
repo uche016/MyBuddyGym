@@ -44,35 +44,30 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent">
 
-             <com.google.android.material.button.MaterialButton
-                 android:id="@+id/five_minutes_btn"
-                 style="@style/Widget.MaterialComponents.Button"
-                 android:layout_width="168dp"
-                 android:layout_height="44dp"
-                 android:layout_marginStart="10dp"
-                 android:layout_marginTop="4dp"
-                 android:text="5 minutes workout"
-                 app:cornerRadius="10dp"
-                 app:layout_constrainedHeight="true"
-                 app:layout_constraintEnd_toStartOf="@id/workouts_btn"
-                 app:layout_constraintStart_toStartOf="parent"
-
-                 app:layout_constraintTop_toTopOf="parent" />
-
-             <com.google.android.material.button.MaterialButton
-                 android:id="@+id/workouts_btn"
-                 style="@style/Widget.MaterialComponents.Button"
+             <include
+                 android:id="@+id/card_view"
+                 layout="@layout/card_view_work_out_item"
                  android:layout_width="wrap_content"
-                 android:layout_height="0dp"
-                 android:layout_marginStart="10dp"
-                 android:layout_marginEnd="5dp"
-                 android:height="20dp"
-                 android:text="workout list"
-                 app:cornerRadius="10dp"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintHorizontal_bias="1.0"
-                 app:layout_constraintStart_toEndOf="@id/five_minutes_btn"
+                 android:layout_height="200dp"
+                 android:layout_marginBottom="20dp"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
                  app:layout_constraintTop_toTopOf="parent" />
+
+
+             <include
+                 android:id="@+id/card_view_2"
+                 layout="@layout/card_view_work_out_item"
+                 android:layout_width="wrap_content"
+                 android:layout_height="200dp"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginBottom="20dp"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintHorizontal_bias="0.86"
+                 app:layout_constraintStart_toEndOf="@id/card_view"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintVertical_bias="0.0" />
 
          </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -96,19 +91,6 @@
             app:layout_constraintStart_toStartOf="parent"
 
             />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/diet_plan_btn"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:height="20dp"
-            android:text="diet plan"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView"
-            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

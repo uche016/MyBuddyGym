@@ -28,50 +28,28 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <androidx.core.widget.NestedScrollView
-            android:id="@+id/nestedScrollView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:layout_constrainedHeight="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.571"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_tv"
-            app:layout_constraintVertical_bias="0.542">
-
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
-
              <include
                  android:id="@+id/card_view"
                  layout="@layout/card_view_work_out_item"
                  android:layout_width="wrap_content"
                  android:layout_height="200dp"
                  android:layout_marginBottom="20dp"
-                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintTop_toBottomOf="@+id/title_tv"
                  app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toTopOf="parent" />
+                />
 
 
-             <include
-                 android:id="@+id/card_view_2"
-                 layout="@layout/card_view_work_out_item"
-                 android:layout_width="wrap_content"
-                 android:layout_height="200dp"
-                 android:layout_marginStart="20dp"
-                 android:layout_marginBottom="20dp"
-                 app:layout_constraintBottom_toBottomOf="parent"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintHorizontal_bias="0.86"
-                 app:layout_constraintStart_toEndOf="@id/card_view"
-                 app:layout_constraintTop_toTopOf="parent"
-                 app:layout_constraintVertical_bias="0.0" />
+        <include
+            android:id="@+id/card_view_2"
+            layout="@layout/card_view_work_out_item"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toEndOf="@id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
 
-         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.core.widget.NestedScrollView>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/next_btn"

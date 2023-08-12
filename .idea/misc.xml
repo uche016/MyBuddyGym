@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/drawable-v24/green_round_stroke.xml" value="0.1" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/drawable-v24/ic_get_pace_done.xml" value="0.1" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/drawable-v24/ic_left_arrow_icon.xml" value="0.1945" />
         <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/card_view_types.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/card_view_work_out_item.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/card_view_work_out_type_item.xml" value="0.264" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/circle.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/fragment_create_an_account.xml" value="0.20052083333333334" />
-        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/fragment_home.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/my_buddy_app_toolbar_layout.xml" value="0.536" />
+        <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/select_excercise_type_fragment.xml" value="0.23883374689826303" />
         <entry key="..\:/Users/bglag/MyBuddyGym/app/src/main/res/layout/workout_types.xml" value="0.20052083333333334" />
       </map>
     </option>

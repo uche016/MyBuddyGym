@@ -27,28 +27,149 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-             <include
-                 android:id="@+id/card_view"
-                 layout="@layout/card_view_work_out_item"
-                 android:layout_width="wrap_content"
-                 android:layout_height="200dp"
-                 android:layout_marginBottom="20dp"
-                 app:layout_constraintTop_toBottomOf="@+id/title_tv"
-                 app:layout_constraintStart_toStartOf="parent"
-                />
-
-
-        <include
-            android:id="@+id/card_view_2"
-            layout="@layout/card_view_work_out_item"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.86"
-            app:layout_constraintStart_toEndOf="@id/card_view"
-            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/Gray_7">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content_constraint_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/selfServiceImageView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:background="@color/BG_blue_darker"
+                            android:src="@drawable/ic_bike"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.12"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/selfServiceTv"
+                            style="@style/item_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="36dp"
+                            android:lineSpacingExtra="5dp"
+                            android:text="Fly"
+                            android:gravity="center"
+                            android:textColor="@color/BG_blue_dark"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/selfServiceImageView"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/selfServiceImageView"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/identificationImageView"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:background="@color/BG_blue_darker"
+                            android:src="@drawable/ic_bike"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/identification_tv"
+                            style="@style/item_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="28dp"
+                            android:lineSpacingExtra="5dp"
+                            android:text="Run"
+                            android:gravity="center"
+                            android:textColor="@color/BG_blue_dark"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/identificationImageView"
+                            app:layout_constraintTop_toBottomOf="@id/identificationImageView"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view_33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_view"
+                    app:strokeColor="@color/Gray_7">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content_constraint_layout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/roadAidIV"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@color/BG_blue_darker"
+                            android:src="@drawable/ic_bike"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.41" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/road_aid_tv"
+                            style="@style/item_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:lineSpacingExtra="5dp"
+                            android:text="Speed"
+                            android:textColor="@color/BG_blue_dark"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/roadAidIV"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
 
 
         <com.google.android.material.button.MaterialButton

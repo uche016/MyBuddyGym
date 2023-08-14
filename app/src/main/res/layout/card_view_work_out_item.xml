@@ -58,26 +58,13 @@
                     tools:visibility="visible" />
 
                 <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tv_2"
-                    style="@style/MyBuddyAppSecondaryText"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center_horizontal"
-                    android:text="5 minutes workout"
-                    android:textColor="@color/BG_blue_darker"
-                    app:layout_constraintEnd_toEndOf="@+id/tv_3"
-                    app:layout_constraintStart_toStartOf="@+id/tv_3"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_3" />
-
-                <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_3"
                     style="@style/MyBuddyAppSecondaryText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="Are you Ready For"
+                    android:text="5 minutes workout"
                     android:textColor="@color/BG_blue_darker"
                     app:layout_constraintEnd_toEndOf="@+id/iconImageView"
                     app:layout_constraintHorizontal_bias="0.0"

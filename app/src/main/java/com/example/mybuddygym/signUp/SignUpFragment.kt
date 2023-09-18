@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
+import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.mybuddygym.BaseApplication
 import com.example.mybuddygym.databinding.FragmentCreateAnAccountBinding
 import com.example.mybuddygym.utils.SharedPreferenceMyBuddyApp
@@ -50,12 +52,13 @@ class SignUpFragment : Fragment() {
     private fun setBinding() {
 
         binding.createAnAccount.setOnClickListener {
+              findNavController().navigate(SignUpFragmentDirections.actionSignUpFragmentToHomeFragment())
 
 
         }
 
         binding.passwordLogin.setOnClickListener {
-          //  findNavController().navigate(R.id.action_createAnAccountFragment_to_launchScreenLoginFragment)
+            findNavController().navigate(SignUpFragmentDirections.actionSignUpFragmentToLoginFragment())
         }
     }
 

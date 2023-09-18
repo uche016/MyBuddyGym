@@ -13,6 +13,7 @@ object DatabaseConstants  {
             const val TEMPLATE = "template"
             const val PASSWORD = "password"
             const val ACCESS_LEVEL = "access_level"
+            const val EMAIL_ADDRESS = "email_address"
         }
     }
 

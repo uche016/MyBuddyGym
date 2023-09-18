@@ -41,4 +41,9 @@ data class User (
     @Expose
     var accessLevel: String?,
 
+    @SerializedName(DatabaseConstants.UserTable.ColumnNames.EMAIL_ADDRESS)
+    @ColumnInfo(name = DatabaseConstants.UserTable.ColumnNames.EMAIL_ADDRESS)
+    @Expose
+    var emailAddress: String?,
+
     )

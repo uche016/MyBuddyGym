@@ -124,7 +124,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
 
     //Flurry Analytics
-    implementation 'com.flurry.android:analytics:13.1.0@aar'
+    implementation 'com.flurry.android:analytics:14.4.0@aar'
     implementation "com.google.android.gms:play-services-analytics:18.0.1"
 
     //Retrofit Dependencies

@@ -2,24 +2,17 @@ package com.example.mybuddygym
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.media.Image
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import androidx.navigation.NavInflater
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.example.mybuddygym.databinding.FragmentHomeBinding
-import com.example.mybuddygym.home.HomeViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import timber.log.Timber
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var navController: NavController
     private val PERMISSION_REQUEST_CODE = 200
+    private var mNavController: NavController? = null
 
 
     @Inject
@@ -44,8 +38,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpNavGraph() {
-        //Bottom Navigation
-      //  navController = findNavController(R.id.)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.home_page_nav_host_fragment) as NavHostFragment?
+
+        mNavController = navHostFragment?.navController
+
+        // Getting the navController's navigation inflater
+        val navInflater: NavInflater? = mNavController?.navInflater
+
+        // Inflating navController's graph using its navigation inflater to inflate
+        // the navigation resource file containing fragment navigation flow
+//        navInflater?.let {
+//            mNavController?.graph = it.inflate(R.navigation.checker_collection_nav_graph)
+//        }
+        val navGraph = navInflater!!.inflate(R.navigation.my_buddy_app_navigation)
+//        navGraph.startDestination = R.id.
+//        mNavController?.setGraph(navGraph, null)
+
+        // Choose the fragment the navigation will show first.
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

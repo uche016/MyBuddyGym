@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 //            mNavController?.graph = it.inflate(R.navigation.checker_collection_nav_graph)
 //        }
         val navGraph = navInflater!!.inflate(R.navigation.my_buddy_app_navigation)
-        navGraph.startDestination = R.id.loginFragment
+        navGraph.startDestination = R.id.homeFragment
         mNavController?.setGraph(navGraph, null)
 
         // Choose the fragment the navigation will show first.

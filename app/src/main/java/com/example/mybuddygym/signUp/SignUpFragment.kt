@@ -51,6 +51,9 @@ class SignUpFragment : Fragment() {
 
     private fun setBinding() {
 
+
+
+        // Setup of button actions
         binding.createAnAccount.setOnClickListener {
               findNavController().navigate(SignUpFragmentDirections.actionSignUpFragmentToHomeFragment())
 

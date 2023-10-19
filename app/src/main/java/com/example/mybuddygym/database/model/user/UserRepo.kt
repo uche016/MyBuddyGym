@@ -7,7 +7,7 @@ interface UserRepo {
 
     fun insert(users: List<User>)
 
-    fun clearAllStaff()
+    fun clearAllUser()
 
-    fun getUserByFirstName(firstName:String):User
+    fun getUserByFirstName():List<String>?
 }

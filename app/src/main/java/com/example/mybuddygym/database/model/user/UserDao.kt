@@ -15,11 +15,10 @@ interface UserDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(users: List<User>)
 
-    @Query("DELETE FROM User")
-    fun clearAllStaff()
-
+    @Query("DELETE FROM ${DatabaseConstants.UserTable.TABLE_NAME} ")
+    fun clearAllSUser()
 
     @Query("SELECT * FROM ${DatabaseConstants.UserTable.TABLE_NAME}" +
-            " WHERE ${DatabaseConstants.UserTable.ColumnNames.FIRST_NAME} =:firstName")
-    fun getUserByFirstName(firstName:String):User
+            " WHERE ${DatabaseConstants.UserTable.ColumnNames.FIRST_NAME}")
+    fun getUserByFirstName(): List<String>?
 }

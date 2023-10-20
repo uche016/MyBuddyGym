@@ -1,24 +1,19 @@
 package com.example.mybuddygym.loginPage
 
 import android.R
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.databinding.ktx.BuildConfig
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.work.WorkManager
-import com.example.mybuddygym.MainActivity
 import com.example.mybuddygym.database.model.user.User
 import com.example.mybuddygym.databinding.FragmentLogInPageBinding
-import com.example.mybuddygym.utils.AppUser
 import com.example.mybuddygym.utils.Constants
 import com.example.mybuddygym.utils.SharedPreferenceMyBuddyApp
-import timber.log.Timber
 
 class LoginFragment : Fragment() {
     companion object {

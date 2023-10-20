@@ -19,6 +19,10 @@ interface UserDao {
     fun clearAllSUser()
 
     @Query("SELECT * FROM ${DatabaseConstants.UserTable.TABLE_NAME}" +
+            " WHERE LOWER(${DatabaseConstants.UserTable.ColumnNames.USER_ID}) =LOWER(:userId)")
+    fun findUser(userId: String): User?
+
+    @Query("SELECT * FROM ${DatabaseConstants.UserTable.TABLE_NAME}" +
             " WHERE ${DatabaseConstants.UserTable.ColumnNames.FIRST_NAME}")
     fun getUserByFirstName(): List<String>?
 }

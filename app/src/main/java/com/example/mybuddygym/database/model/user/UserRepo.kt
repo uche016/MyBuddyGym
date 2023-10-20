@@ -10,4 +10,6 @@ interface UserRepo {
     fun clearAllUser()
 
     fun getUserByFirstName():List<String>?
+
+    fun findUser(userId: String): User?
 }

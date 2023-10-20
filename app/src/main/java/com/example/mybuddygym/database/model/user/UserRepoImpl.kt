@@ -25,6 +25,10 @@ class UserRepoImpl @Inject constructor(
       return userDao.getUserByFirstName()
     }
 
+    override fun findUser(userId: String): User? {
+        return userDao.findUser(userId)
+    }
+
 }
 
 

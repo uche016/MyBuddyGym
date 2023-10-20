@@ -5,6 +5,20 @@
 
     tools:context=".homeScreen.views.login.fragments.LaunchScreenHomeFragment">
 
+
+    <data>
+        <import type="com.example.mybuddygym.utils.AppUser" />
+
+        <variable
+            name="appUser"
+            type="AppUser" />
+
+        <variable
+            name="isAllFieldValid"
+            type="Boolean" />
+
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,12 +71,12 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="56dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="@color/BG_blue"
             android:text="@string/log_in"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:backgroundTint="@{isAllFieldValid ? @color/BG_blue_darker : @color/white}"
+            android:enabled="@{isAllFieldValid}"
+            android:strokeColor="@{isAllFieldValid ? @color/BG_blue_darker : @color/text_disabled}"
+            android:textColor="@{isAllFieldValid ? @color/white : @color/text_disabled}"
             app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

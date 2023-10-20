@@ -42,10 +42,14 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         mBinding = FragmentLogInPageBinding.inflate(inflater)
+        initCompulsoryVariables ()
+        setBinding()
         return mBinding.root
+
     }
 
     private fun initCompulsoryVariables (){
+        observeLiveDataValues()
         // This variable checks if the person has logged in, temporary save it and this is used fro further actions on the application
         val isLoggedIn = mSharedPreference.getValue(
             Boolean::class.java,

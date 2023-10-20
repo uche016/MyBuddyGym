@@ -24,7 +24,15 @@ class LoginViewModel (
     internal val loginMapLive: LiveData<Map<String, String?>> get() = _loginMapLive
 
 
-    fun getUserFromDB(): List<String>? {
+
+    fun getUserFromDB(userId: String): User? {
+        val bgStaff = runBlocking(Dispatchers.IO) {
+            usersRepo.findUser(userId)
+        }
+        return bgStaff
+    }
+
+    fun getUsersFromDB(): List<String>? {
         val user = runBlocking(Dispatchers.IO) {
             usersRepo.getUserByFirstName()
         }

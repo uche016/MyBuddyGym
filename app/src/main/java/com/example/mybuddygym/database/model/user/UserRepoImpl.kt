@@ -17,12 +17,16 @@ class UserRepoImpl @Inject constructor(
         return userDao.insert(users)
     }
 
-    override fun clearAllStaff() {
-        userDao.clearAllStaff()
+    override fun clearAllUser() {
+        userDao.clearAllSUser()
     }
 
-    override fun getUserByFirstName(firstName: String): User {
-      return userDao.getUserByFirstName(firstName)
+    override fun getUserByFirstName(): List<String>? {
+      return userDao.getUserByFirstName()
+    }
+
+    override fun findUser(userId: String): User? {
+        return userDao.findUser(userId)
     }
 
 }

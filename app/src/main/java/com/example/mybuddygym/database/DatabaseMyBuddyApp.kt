@@ -10,6 +10,9 @@ import com.example.mybuddygym.database.model.user.User
 import com.example.mybuddygym.database.model.user.UserDao
 import com.example.mybuddygym.database.model.workOutDetails.WorkOutDetails
 import com.example.mybuddygym.database.model.workOutDetails.WorkOutDetailsDao
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import timber.log.Timber
 
 
@@ -67,6 +70,55 @@ abstract class DatabaseMyBuddyApp : RoomDatabase(){
                 Timber.d("Preloading Collection Center data")
                 /** Populate the database in the background. */
 
+                CoroutineScope(Dispatchers.IO).launch {
+                    sInstance?.let { dbManager ->
+                        populateDB(dbManager)
+                    }
+                }
+
+            }
+
+            private fun populateDB(dbManager: DatabaseMyBuddyApp) {
+                insertStaffList(dbManager.userDao())
+            }
+
+            private fun insertStaffList(userDao: UserDao?) {
+                val userList = arrayListOf<User>()
+                userList.add(
+                    User(
+                        "G-1110000000000555",
+                        "Daniel",
+                        "Micheal",
+                        "22222",
+                        "1",
+                        "1",
+                        emailAddress = "uche@gmail.com"
+                    )
+                )
+                userList.add(
+                    User(
+                        "K-1110000000000555",
+                        "Uche",
+                        "Onyeator",
+                        "11111",
+                        "1",
+                        "1",
+                        emailAddress = "awwalola@gmail.com"
+                    )
+                )
+                userList.add(
+                    User(
+                        "L-1110000000000555",
+                        "Samuel",
+                        "Bamidele",
+                        "33333",
+                        "1",
+                        "1",
+                        emailAddress = "mikey12@gmail.com"
+                    )
+                )
+
+                userDao?.insert(userList)
             }
 
 

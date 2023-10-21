@@ -26,5 +26,7 @@
     <string name="to_create_an_account">to create an account</string>
     <string name="full_name">Full name</string>
     <string name="last_name" />
+    <string name="login_incorrect_password">Incorrect password</string>
+    <string name="login_incorrect_email">Incorrect email</string>
 
 </resources>

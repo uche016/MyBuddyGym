@@ -2,7 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data>
 
         <variable
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/logo_purple">
-
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/select_diet_plan"
             style="@style/MyBuddyAppPrimaryText_HeadingText"
@@ -38,8 +36,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="56dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp"
             android:backgroundTint="@color/BG_blue"
-            android:text="@string/"
+            android:text=""
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -50,4 +49,11 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf=""
-            app:layout_constraintVertical_chainStyle="packed" /
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+

@@ -14,7 +14,7 @@ class SelectWorkoutTypeFragment : Fragment() {
     }
 
     private lateinit var mBinding: SelectExcerciseTypeFragmentBinding
-    private lateinit var mSharedPreference: SharedPreferenceMyBuddyApp
+    private lateinit var mSharedPreference: SharedPreferenceMyBuddyApp  //fetching and getting data
 
 
     override fun onCreateView(
@@ -32,7 +32,7 @@ class SelectWorkoutTypeFragment : Fragment() {
         setBinding()
         super.onViewCreated(view, savedInstanceState)
     }
-
+//assigns what the buttons would do so all the interactions
     private fun setBinding() {
 
 

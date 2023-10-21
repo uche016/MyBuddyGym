@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/logo_purple"
-        android:padding="@dimen/activity_horizontal_margin">
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:ignore="MissingClass">
 
 
         <ImageView
@@ -179,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:maxLines="1"
-                android:text="@string/ last_name"
+                android:text="@string/last_name"
                 android:textColor="@color/BG_red2"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -248,20 +249,6 @@
             app:layout_constraintHorizontal_bias="0.334"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/passwordTvDesc"
-            style="@style/item_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:text="@string/to_access_your_account"
-            android:textColor="@color/BG_brown"
-            android:textSize="12dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
-            app:layout_constraintStart_toEndOf="@+id/passwordLogin" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,6 +49,14 @@ object DatabaseConstants  {
             const val SYNC_FLAG  = "sync_flag"
         }
     }
+    object WorkoutTypeTable {
+        const val TABLE_NAME = "workout_type"
 
+        object ColumnNames {
+            const val WORKOUT_NAME = "workout_name"
+            const val WORKOUT_IMAGE = "workout_image"
+
+        }
+    }
 
 }

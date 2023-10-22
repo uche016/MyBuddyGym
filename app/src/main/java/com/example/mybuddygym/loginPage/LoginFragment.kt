@@ -56,7 +56,6 @@ class LoginFragment : Fragment() {
             Constants.KEY_IS_LOGGED_IN
         )
 
-
     }
 
 

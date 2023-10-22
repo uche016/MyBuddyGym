@@ -68,7 +68,7 @@ class LoginFragment : Fragment() {
     private fun isValidLogin(username: String, password: String): Boolean {
         val mUser = viewModel.getUserFromDB(username)
         Timber.i("User", mUser)
-
+// to check if person password is valid or not
         return if (mUser != null) {
             user = mUser
             val validLogin = isValidPass(clearTextPassword = password, hashedPass = user.password!!)

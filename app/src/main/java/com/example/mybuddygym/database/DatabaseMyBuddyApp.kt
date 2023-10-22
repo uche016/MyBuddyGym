@@ -15,7 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
-
+//show all tables and entities in the code
 @Database(
     entities = [
         User::class,
@@ -81,7 +81,7 @@ abstract class DatabaseMyBuddyApp : RoomDatabase(){
             private fun populateDB(dbManager: DatabaseMyBuddyApp) {
                 insertStaffList(dbManager.userDao())
             }
-
+//pre populating the database to login to look at the app for testing purposes
             private fun insertStaffList(userDao: UserDao?) {
                 val userList = arrayListOf<User>()
                 userList.add(

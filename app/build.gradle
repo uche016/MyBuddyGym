@@ -48,9 +48,6 @@ android {
         jvmTarget = '1.8'
     }
 
-    aaptOptions {
-        noCompress "model.tflite"
-    }
 
 }
 kapt {

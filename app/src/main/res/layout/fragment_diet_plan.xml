@@ -29,30 +29,106 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_login"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="4dp"
-            android:backgroundTint="@color/BG_blue"
-            android:text=""
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            app:cardCornerRadius="16dp"
+            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf=""
-            app:layout_constraintVertical_chainStyle="packed" />
+            app:layout_constraintTop_toBottomOf="@id/select_diet_plan"
+            app:strokeColor="@color/BG_gray"
+            app:strokeWidth="@dimen/standard_stroke_width">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_text_padding">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title"
+                    style="@style/MyBuddyAppPrimaryText_HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARBOHYDRATES"
+                    android:textColor="@color/BG_blue_darker"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/ivWorkOut"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/arm_and_chest_workout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            app:cardCornerRadius="16dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toEndOf="@id/card_view"
+            app:layout_constraintTop_toBottomOf="@id/select_diet_plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="@color/BG_gray"
+            app:strokeWidth="@dimen/standard_stroke_width">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_constraint_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_text_padding">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title_2"
+                    style="@style/MyBuddyAppPrimaryText_HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROTEINSssssss"
+                    android:textColor="@color/BG_blue_darker"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/ivWorkOut_2"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/arm_and_chest_workout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_2">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </layout>

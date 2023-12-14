@@ -28,11 +28,11 @@
     <string name="last_name" />
     <string name="login_incorrect_password">Incorrect password</string>
     <string name="login_incorrect_email">Incorrect email</string>
-    <string name="carbohydrates">Carbohydrates</string>
+    <string name="carbohydrates">Carbohydrate</string>
     <string name="proteins">Proteins</string>
     <string name="fats_and_oil">Fats and Oil</string>
     <string name="minerals">Minerals</string>
-    <string name="vitamins">Minerals</string>
+    <string name="vitamins">Vitamins</string>
     <string name="fibre">Fibre</string>
 
 </resources>
